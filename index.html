@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://operandoviajes.com/wp-content/uploads/2020/02/CIUDAD-GUATEMALA-2.png'); /* Fondo de pantalla */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: rgba(240, 240, 240, 0.8); /* Fondo con opacidad */
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Encabezado con opacidad */
+            color: #fff;
+            padding: 2%;
+            text-align: center;
+            transition: background-color 0.3s ease; /* Transición de color */
+        }
+        
+        header:hover {
+            background-color: rgba(85, 85, 85, 0.8); /* Cambio de color al pasar el cursor */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 2%;
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        nav ul li:hover {
+            transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700; /* Cambio de color al pasar el cursor */
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        aside{
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            border-radius: 5px; /* Bordes redondeados */
+            padding: 10px; /* Relleno interno */
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+            margin-top: 20px; /* Margen superior */
+            width: 30%;
+            height: 100%;
+        }
+        
+        main {
+            padding: 2%;
+            width: 100%;
+            height: 100%;
+        }
+
+        #video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            margin-bottom: 3%;
+            background-color: rgba(255, 255, 255, 0.8); /* Sección con opacidad */
+            border-radius: 10px;
+            padding: 2%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        section:hover {
+            transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 1%;
+            margin-bottom: 2%;
+        }
+        
+        section p {
+            color: black;
+        }
+        
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Pie de página con opacidad */
+            color: #fff;
+            text-align: center;
+            padding: 1%;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff; /* Color del texto */
+            text-decoration: none; /* Quita el subrayado */
+            transition: color 0.3s ease; /* Transición de color */
+        }
+
+        footer a:hover {
+            color: #ffd700; /* Cambio de color al pasar el cursor */
+        }
+        
+        /* Estilos para los iconos de contacto */
+        .contact-info i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a... inserte texto a su gusto!</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#vision">Visión</a></li>
+                <li><a href="#contactanos">Contactanos</a></li>
+                <li><a href="#extra">Extra</a></li>
+                <li><a href="#agenda">Agenda tu cita</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <section id="contactanos">
+                <h2>Contactanos</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Correo electrónico: ejemplo@example.com</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: +123456789</p>
+                    <p>¿Qué puede o debe ir aquí?</p>
+                    <p>Todo aquello que sea contacto, correo, teléfono, ubicación (en caso de ser un negocio establecido, si es una perosna que sea su propio agente no sería tan necesaria la ubicación), etc.</p>
+                </div>
+            </section>
+        </aside>
+        <main>
+            <!-- Contenido principal de la página -->
+            <section id="inicio">
+                <h2>Sobre Nosotros</h2>
+                <p>¿Qué puede o debe ir aquí?</p>
+                <p>Información sobre la persona o la empresa, el detalle de esta página es que es informativa. Detalles de como empezó, cuantos años tiene de experiencia en el área, logros, etc., es un gran punto de apoyo en esta sección.</p>
+            </section>
+            <section id="vision">
+                <h2>Visión u Objetivo</h2>
+                <p>¿Qué puede o debe ir aquí?</p>
+                <p>La visión u objetivo de la empresa o persona, detalles de que quiere lograr o aportar a las personas o a los clientes, los valores y matrices morales y éticas con los que se rige y la meta de la empresa o persona (dentro de ese ambito).</p>
+            </section>
+        </main>
+    </div> <!-- Cierre del div .container -->
+    <section>
+        <section id="extra">
+            <h2>Información extra</h2>
+            <p>¿Qué puede o debe ir aquí?</p>
+            <p>Información extra, tal vez redes sociales, reseñas de clientes, imagenes muestra, etc., o se podría borrar está sección porque la agregue a modo demo</p>
+        </section>
+    </section>
+    <section>
+        <section id="agenda">
+            <h2>¿Quieres agendar una cita?</h2>
+            <p>Aquí el formulario, no es mucha ciencia. Lo ideal que se use un formulario con un correo que la empresa o la persona maneje para que sea de fácil acceso a la información obtenida. Yo use el recurso de google forms porque mi computadora no tiene espacio para hacer una base de datos ni tampoco tengo para costear una base de datos en linea como Microsoft Azure.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdeUvpUmGPesOA4E-HQ6Xugb_DgUhT7f0xtYqGa_i6oIGi9ng/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </section>
+    </section>
+    <footer>
+        <p>Derechos de autor © 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p><a href="#inicio">Volver arriba</a></p>
+    </footer>
+</body>
+
+</html>
